@@ -160,3 +160,9 @@ footer { color: var(--muted); font-size: 0.86rem; display: flex; flex-wrap: wrap
 .gcard.soon { border-style: dashed; }
 .gcard.soon p { font-size: 0.95rem; }
 .pill { justify-self: start; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; background: var(--orange-soft); color: var(--orange); }
+
+/* How-to video */
+.howto { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 32px; align-items: start; }
+.howto video { width: 100%; max-width: 320px; border-radius: 26px; background: var(--phone); border: 10px solid var(--phone); box-shadow: 0 18px 40px -22px rgba(0,0,0,.45); justify-self: center; }
+.howto ol { margin: 0; padding-left: 1.3em; display: grid; gap: 8px; font-size: 1.02rem; }
+@media (max-width: 760px) { .howto { grid-template-columns: 1fr; } }
