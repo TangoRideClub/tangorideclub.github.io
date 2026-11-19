@@ -155,3 +155,8 @@ footer { color: var(--muted); font-size: 0.86rem; display: flex; flex-wrap: wrap
 .invite button { border: none; cursor: pointer; font-family: var(--body); }
 .invite .status { min-height: 1.5em; color: var(--muted); }
 .got[hidden] { display: none; }
+
+/* Coming soon */
+.gcard.soon { border-style: dashed; }
+.gcard.soon p { font-size: 0.95rem; }
+.pill { justify-self: start; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; background: var(--orange-soft); color: var(--orange); }
