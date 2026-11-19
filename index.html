@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tango Ride Club · ride recorder and road alerts for Indian roads</title>
+<meta name="description" content="Tango Ride Club records your ride, warns you about speed breakers, potholes and rough roads ahead, and reviews how you rode, judged for your own bike.">
+<meta name="theme-color" content="#0F7F73">
+<meta property="og:title" content="Tango Ride Club">
+<meta property="og:description" content="Ride recorder and road alerts for Indian roads, judged for the bike you ride.">
+<meta property="og:image" content="img/icon-512.png">
+<link rel="icon" href="img/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="name" href="#"><img src="img/club_icon.png" alt="">Tango Ride Club</a>
+    <nav aria-label="Sections">
+      <a href="#alerts">Road alerts</a>
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#download">Got an invite?</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="title">
+    <div class="text">
+      <div class="eyebrow">Android · ride recorder, road alerts, ride coach</div>
+      <div class="brand">
+        <img src="img/club_icon.png" alt="Tango Ride Club icon: the Tango shield with a teal CLUB ribbon">
+        <h1 id="title">Tango Ride <span>Club</span></h1>
+      </div>
+      <div class="tag">Tango Your Ride Companion</div>
+      <p class="lede">Mount your phone, press Start, ride. Tango Ride Club warns you about the speed breakers, potholes and rough stretches ahead, then tells you how you rode, judged for the bike you were actually riding.</p>
+      <div class="cta">
+        <a class="btn primary" href="#download">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+          I have an invite
+        </a>
+        <a class="btn ghost" href="#features">See what it does</a>
+      </div>
+      <div class="facts">
+        <span class="fact">Invite-only beta</span>
+        <span class="fact">Works with the screen locked</span>
+        <span class="fact">~220 Indian bikes built in</span>
+        <span class="fact">No account, no ads</span>
+      </div>
+    </div>
+    <figure class="phone"><img src="img/s2_ride.jpg" alt="A ride page: 10.2 km, the trail drawing and a ride review scoring 85 out of 100" loading="eager"><figcaption>A ride, reviewed</figcaption></figure>
+  </section>
+
+  <section aria-labelledby="why">
+    <div class="eyebrow">Why it exists</div>
+    <h2 id="why">Built for Indian roads</h2>
+    <div class="why">
+      <p>Speed breakers without paint or signs, potholes that move every monsoon, and stretches of broken road that wreck rims and backs. Navigation apps tell you where to turn, but nothing warns you what the road ahead is like, or tells you how well you rode it.</p>
+      <p>Riding apps that do score you use one rule for every bike, so a scooter and an adventure bike are judged the same way. Dashcam-style apps heat the phone up within minutes on a handlebar.</p>
+      <p>Tango Ride Club is a cool-running recorder that learns the road from real rides, warns you before the bad bits, and gives a fair, practical review for the bike you ride. Every rider in the club adds to the road map.</p>
+    </div>
+  </section>
+
+  <section id="alerts" aria-labelledby="alerts-h">
+    <div class="eyebrow">New · road alerts</div>
+    <h2 id="alerts-h">Know what's coming</h2>
+    <p>Once a speed breaker, pothole or rough patch has shown up on two or more rides, the app warns you about 7 seconds before you reach it: a short voice line through your phone or helmet headset, and one big, calm picture on the screen, even with the screen locked. It shows one distance, stays about 4 seconds, and fades away. No flashing, no countdown to stare at.</p>
+    <div class="signs">
+      <div class="sign">
+        <svg viewBox="0 0 64 56" aria-hidden="true"><path d="M32 5 L59 51 L5 51 Z" fill="#FFFFFF" stroke="#FFB000" stroke-width="7" stroke-linejoin="round"></path><path d="M15 41 H24 C26 31 38 31 40 41 H49" fill="none" stroke="#0B0D10" stroke-width="4" stroke-linecap="round"></path></svg>
+        <strong>Speed breakers ×3</strong>
+        <div class="big">150 m</div>
+        <span>One warning for a whole stretch</span>
+      </div>
+      <div class="sign">
+        <svg viewBox="0 0 64 56" aria-hidden="true"><path d="M32 5 L59 51 L5 51 Z" fill="#FFFFFF" stroke="#FFB000" stroke-width="7" stroke-linejoin="round"></path><path d="M14 41 q4 -6 8 0 t8 0 t8 0 t8 0 t6 0" fill="none" stroke="#0B0D10" stroke-width="4" stroke-linecap="round"></path></svg>
+        <strong>Rough road</strong>
+        <div class="big">AHEAD</div>
+        <span>For the next 300 m</span>
+      </div>
+      <div class="sign red">
+        <svg viewBox="0 0 64 56" aria-hidden="true"><path d="M32 5 L59 51 L5 51 Z" fill="#FFFFFF" stroke="#FF5A4E" stroke-width="7" stroke-linejoin="round"></path><path d="M13 39 H23 M41 39 H51" stroke="#0B0D10" stroke-width="4" stroke-linecap="round"></path><path d="M23 38 A9 7 0 0 0 41 38 Z" fill="#0B0D10"></path></svg>
+        <strong>Pothole</strong>
+        <div class="big">90 m</div>
+        <span>Or a big bump: ease off</span>
+      </div>
+      <div class="sign red">
+        <svg viewBox="0 0 64 56" aria-hidden="true"><path d="M32 5 L59 51 L5 51 Z" fill="#FFFFFF" stroke="#FF5A4E" stroke-width="7" stroke-linejoin="round"></path><rect x="29" y="19" width="6" height="17" rx="3" fill="#0B0D10"></rect><circle cx="32" cy="42" r="3.5" fill="#0B0D10"></circle></svg>
+        <strong>Hard-braking spot</strong>
+        <div class="big">AHEAD</div>
+        <span>Where riders keep braking hard</span>
+      </div>
+    </div>
+    <p class="muted">Alerts work offline: the spots are stored on your phone. The club's shared road map updates whenever you're online, so you get warned on roads other members ride too. Volume, voice or beeps, and which hazards to hear about are set in Profile → Road alerts.</p>
+  </section>
+
+  <section id="features" aria-labelledby="glance">
+    <div class="eyebrow">Features at a glance</div>
+    <h2 id="glance">What it does</h2>
+    <div class="glance">
+      <div class="gcard"><h3>Records every ride</h3><ul><li>Motion sensors and GPS, no camera</li><li>Works with the screen locked or under Google Maps</li><li>Ready to view the moment you stop</li></ul></div>
+      <div class="gcard"><h3>Warns you ahead</h3><ul><li>Speed breaker stretches, rough road, potholes, hard-braking spots</li><li>Voice plus one big picture, even on the lock screen</li><li>Learns from your rides and the club's</li></ul></div>
+      <div class="gcard"><h3>Reviews your riding</h3><ul><li>Score out of 100, strengths and tips</li><li>Smoothness, braking, acceleration, cornering</li><li>Compared with your last ride on the same route</li></ul></div>
+      <div class="gcard"><h3>Fair to your bike</h3><ul><li>About 220 Indian bikes and scooters built in</li><li>Rules tuned by power-to-weight, wheels and ABS</li><li>Fuel, range, service and chain-lube reminders</li></ul></div>
+      <div class="gcard"><h3>Share your ride</h3><ul><li>A ride card for WhatsApp Status or Instagram</li><li>Up to 6 numbers, including lean angle and 0-100 km/h</li><li>A one-line summary of the ride, written for you</li></ul></div>
+      <div class="gcard"><h3>Respects your privacy</h3><ul><li>No account, no ads</li><li>The first and last 200 m of each ride are never shared</li><li>Sharing only with your OK, switch off any time</li></ul></div>
+    </div>
+  </section>
+
+  <section class="feature" aria-labelledby="f-record">
+    <div class="text">
+      <div class="eyebrow">Record</div>
+      <h2 id="f-record">One button, then ride</h2>
+      <p>The app uses only the phone's motion sensors and GPS (no camera), so it stays cool on the handlebar for a whole commute or a highway day.</p>
+      <ul>
+        <li>Records with the screen off or while Google Maps is on top</li>
+        <li>Warns you if battery saver would switch GPS off</li>
+        <li>"Start &amp; open Google Maps" for navigation in one tap</li>
+        <li>"Share my ride with family": Google Maps live location, or a "Starting my ride" message</li>
+      </ul>
+    </div>
+    <figure class="phone"><img src="img/s0.jpg" alt="Record screen with a large Start recording button" loading="lazy"><figcaption>Record</figcaption></figure>
+  </section>
+
+  <section class="feature flip" aria-labelledby="f-review">
+    <figure class="phone"><img src="img/s4_ride3.jpg" alt="Speed bands and riding style tiles: smoothness 82, no hard braking" loading="lazy"><figcaption>Speed and style</figcaption></figure>
+    <div class="text">
+      <div class="eyebrow">After the ride</div>
+      <h2 id="f-review">A review, not just numbers</h2>
+      <p>Each ride gets a score out of 100, what you did well, up to three tips with a Street View link to the exact spot, and a comparison with your last ride on the same route.</p>
+      <ul>
+        <li>Braking for a speed breaker counts as good riding, not hard braking</li>
+        <li>Cornering lean from real bends only, not junction turns</li>
+        <li>Rough road, bumpy stretches and big hits, climb and descent</li>
+        <li>Rides are named automatically ("Home → Office") and repeat routes are grouped</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature" aria-labelledby="f-deep">
+    <div class="text">
+      <div class="eyebrow">Deep analysis</div>
+      <h2 id="f-deep">The route, km by km</h2>
+      <ul>
+        <li>Speed, bumps and roughness for every km, and how long each took compared with usual</li>
+        <li>Known bumps: spots felt on most rides here, so they're real speed breakers or potholes</li>
+        <li>What the weather did: heat, rain, extra drag from a headwind</li>
+        <li>What it meant for your bike: fuel and cost, range left, service due "in N rides like this"</li>
+      </ul>
+    </div>
+    <div class="pair">
+      <figure class="phone"><img src="img/s6_deep.jpg" alt="Deep analysis: key takeaways about the roughest stretches and a known bump" loading="lazy"><figcaption>Key takeaways</figcaption></figure>
+      <figure class="phone"><img src="img/s7_deep2.jpg" alt="Km by km table with speed, bumps, roughness and time against usual" loading="lazy"><figcaption>Km by km</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="feature flip" aria-labelledby="f-card">
+    <figure class="phone"><img src="img/card_route.png" alt="Story card: the route shape of a 10.3 km morning ride on an RTX 300 with distance, riding time, average speed and smoothness" loading="lazy"><figcaption>Ride card, route only</figcaption></figure>
+    <div class="text">
+      <div class="eyebrow">Share</div>
+      <h2 id="f-card">A ride card worth posting</h2>
+      <p>Open any ride, tap ⋯ → Share ride card, and post it to WhatsApp Status, Instagram or a chat, or save it to your gallery.</p>
+      <ul>
+        <li>Street map, terrain map, or just the route shape (the most private)</li>
+        <li>Up to 6 numbers from 28: distance, top speed, 0-100 km/h, max lean, climb, smoothness, breakers and more</li>
+        <li>A one-line summary from the ride's own numbers. Keep it, rewrite it, or turn it off.</li>
+        <li>Your nickname and bike at the top, or hide the nickname with one tap</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature" aria-labelledby="f-bike">
+    <div class="text">
+      <div class="eyebrow">My bike</div>
+      <h2 id="f-bike">Judged for the bike you ride</h2>
+      <p>Type the model ("fasc", "pulsar", "himalayan") and its specs load by themselves from about 220 Indian bikes and scooters. Every ride is then judged by that bike's own rules.</p>
+      <ul>
+        <li>Fuel log, mileage, cost per km and range left</li>
+        <li>Service and chain-lube countdowns, insurance and PUC reminders</li>
+        <li>Several bikes, with rides kept separate per bike</li>
+      </ul>
+    </div>
+    <figure class="phone"><img src="img/s8_bike.jpg" alt="My bike: TVS Apache RTX 300 with its specs and how its rides are judged" loading="lazy"><figcaption>My bike</figcaption></figure>
+  </section>
+
+  <section aria-labelledby="rules">
+    <div class="eyebrow">Fair to every bike</div>
+    <h2 id="rules">No single rule for all bikes</h2>
+    <p class="muted">The bike type sets the base rules. Power-to-weight, wheel size and ABS then tune them. Example values:</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Bike</th><th>Type</th><th>Hard acceleration</th><th>Bumps that count at speed</th><th>Lean margin</th><th>Brakes</th></tr></thead>
+        <tbody>
+          <tr><td>TVS Apache RTX 300</td><td>ADV</td><td class="num">16 km/h in 2 s</td><td>Big hits only, above 50 km/h</td><td class="num">≈ 45°</td><td>Dual-channel ABS</td></tr>
+          <tr><td>Yamaha Fascino 125</td><td>Scooter</td><td class="num">11 km/h in 2 s</td><td>Medium and big, above 40 km/h</td><td class="num">≈ 35°</td><td>Linked brakes, no ABS</td></tr>
+          <tr><td>Hero Splendor Plus</td><td>Commuter</td><td class="num">10.5 km/h in 2 s</td><td>Medium and big, above 45 km/h</td><td class="num">≈ 40°</td><td>Combi-brake, no ABS</td></tr>
+          <tr><td>Royal Enfield Classic 350</td><td>Cruiser</td><td class="num">12.5 km/h in 2 s</td><td>Medium and big, above 50 km/h</td><td class="num">≈ 35°</td><td>ABS</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="privacy" aria-labelledby="privacy-h">
+    <div class="eyebrow">Privacy</div>
+    <h2 id="privacy-h">What leaves the phone</h2>
+    <div class="split">
+      <div class="panel club">
+        <h3>Shared, only with your OK</h3>
+        <ul>
+          <li><span class="yes">Shared:</span> ride recordings with the first and last 200 m cut off, the road spots your phone learned (none near where rides start or end), bike model and type, phone model, your nickname</li>
+          <li><span class="no">Never:</span> your name, photo, licence, papers, fuel or service records, or your Home and Office places</li>
+          <li>Switch sharing off, or choose Wi-Fi only, any time in Profile</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Why share at all</h3>
+        <p>Each ride shows where the speed breakers, potholes and rough stretches really are. Pooled together, those rides make the road alerts and reviews better for every rider in the club.</p>
+        <p><a href="privacy.html">Read the full privacy policy</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="download" aria-labelledby="dl">
+    <div class="eyebrow">Invite-only beta</div>
+    <h2 id="dl">Got an invite? Install it here</h2>
+    <p>Tango Ride Club is being tested by a small group of riders first. If a rider in the club gave you an invite code, enter it to get the app. No code yet? Ask the rider who told you about it.</p>
+    <form class="invite" id="invite" novalidate>
+      <label for="code">Invite code</label>
+      <div class="row">
+        <input id="code" name="code" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="RIDER-AB12" required>
+        <button class="btn primary" type="submit">Check code</button>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="got" id="got" hidden>
+      <a class="btn primary" id="dlink" href="#" rel="nofollow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+        <span id="dlabel">Download the app</span>
+      </a>
+    </div>
+    <ol>
+      <li>Enter your code and tap <strong>Download</strong> on your Android phone. Chrome may say the file can harm your device: that's its standard message for any app from outside the Play Store. Choose <em>Download anyway</em>.</li>
+      <li>Open the downloaded file. If Android asks, allow installs from Chrome, then tap <strong>Install</strong>.</li>
+      <li>Open Tango Ride Club, enter the same invite code, and follow the setup: agree to sharing, pick a nickname, choose where the phone rides, allow location and notifications, add your bike.</li>
+      <li>Mount the phone on the handlebar, tap <strong>Start recording</strong>, and ride. Tell us how it went from Profile → Beta feedback.</li>
+    </ol>
+    <p class="muted">Android 11 or newer with GPS. Keep battery saver off while riding, or GPS stops when the screen locks. New versions are announced inside the app; your rides stay when you update. Phones locked by a finance or work policy can't install apps from outside the Play Store.</p>
+  </section>
+
+  <footer>
+    <span>Tango Ride Club · invite-only beta</span>
+    <span>Screens shown are from real rides on a TVS Apache RTX 300.</span>
+    <a href="privacy.html">Privacy policy</a>
+  </footer>
+</div>
+<script>
+// Invite-only download: the club's script trades a valid invite code for the current download link.
+(function () {
+  var API = 'https://script.google.com/macros/s/AKfycbxGStUwVFZFFox47ONxc7g1V30qxQFFhMeIuz7wNQe7_kIFV0SJQzQkhKzNMuak_p-beg/exec';
+  var form = document.getElementById('invite'), input = document.getElementById('code'), status = document.getElementById('status');
+  var got = document.getElementById('got'), link = document.getElementById('dlink'), label = document.getElementById('dlabel');
+  var fromUrl = new URLSearchParams(location.search).get('invite');
+  if (fromUrl) input.value = fromUrl.toUpperCase();
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var code = input.value.trim().toUpperCase();
+    if (!code) { status.textContent = 'Enter the invite code you were given.'; input.focus(); return; }
+    status.textContent = 'Checking…'; got.hidden = true;
+    fetch(API + '?action=download&code=' + encodeURIComponent(code))
+      .then(function (r) { return r.json(); })
+      .then(function (o) {
+        if (!o.ok) { status.textContent = o.error || 'That invite code isn’t valid.'; return; }
+        status.textContent = 'Code accepted. Welcome to the club!';
+        link.href = o.url;
+        label.textContent = 'Download Tango Ride Club' + (o.versionName ? ' ' + o.versionName : '');
+        got.hidden = false; link.focus();
+      })
+      .catch(function () { status.textContent = 'Couldn’t check the code. Check your internet and try again.'; });
+  });
+})();
+</script>
+</body>
+</html>
