@@ -47,6 +47,7 @@
         <a class="btn ghost" href="#features">See what it does</a>
       </div>
       <div class="facts">
+        <span class="fact">Android only for now</span>
         <span class="fact">Invite-only beta</span>
         <span class="fact">Works with the screen locked</span>
         <span class="fact">~220 Indian bikes built in</span>
@@ -289,7 +290,7 @@
       <li>Open Tango Ride Club, enter the same invite code, and follow the setup: agree to sharing, pick a nickname, choose where the phone rides, allow location and notifications, add your bike.</li>
       <li>Mount the phone on the handlebar, tap <strong>Start recording</strong>, and ride. Tell us how it went from Profile → Beta feedback.</li>
     </ol>
-    <p class="muted">Android 11 or newer with GPS. Keep battery saver off while riding, or GPS stops when the screen locks. New versions are announced inside the app; your rides stay when you update. Phones locked by a finance or work policy can't install apps from outside the Play Store.</p>
+    <p class="muted"><strong>Android only for now.</strong> There&#39;s no iPhone version yet; one may come later if enough riders want it. Android 11 or newer with GPS. Keep battery saver off while riding, or GPS stops when the screen locks. New versions are announced inside the app; your rides stay when you update. Phones locked by a finance or work policy can't install apps from outside the Play Store.</p>
   </section>
 
   <footer>
@@ -306,8 +307,12 @@
   var got = document.getElementById('got'), link = document.getElementById('dlink'), label = document.getElementById('dlabel');
   var fromUrl = new URLSearchParams(location.search).get('invite');
   if (fromUrl) input.value = fromUrl.toUpperCase();
+  var iphone = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var IOS_NOTE = 'Tango Ride Club is Android only for now, so it can’t be installed on an iPhone or iPad.';
+  if (iphone) status.textContent = IOS_NOTE;
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    if (iphone) { status.textContent = IOS_NOTE; return; }
     var code = input.value.trim().toUpperCase();
     if (!code) { status.textContent = 'Enter the invite code you were given.'; input.focus(); return; }
     status.textContent = 'Checking…'; got.hidden = true;
